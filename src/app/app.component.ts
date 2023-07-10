@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LessonService } from './lesson.service';
+import { LessonModule } from './lessonmodule';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 're-establish-rva-portal';
+  lessonModuleList: LessonModule[] = [];
+
+  constructor(private lesson: LessonService) {
+    this.lessonModuleList = lesson.getAllLessonModules();
+  }
 }

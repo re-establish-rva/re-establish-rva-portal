@@ -3,14 +3,22 @@
 <html>
 <body>
   <header>
-    <select name="languages" id="language">
-      <option value="arabic">Arabic</option>
-    </select>
     <img id="logo" src="./assets/ReEstablish-Richmond.png" alt="ReEstablish Richmond logo" />
-    <button type="button">Logout</button>
+    <div>
+      <select name="languages" id="language">
+        <option value="Arabic">Arabic</option>
+        <option value="Dari">Dari</option>
+        <option value="Pashto">Pashto</option>
+        <option value="Swahili">Swahili</option>
+        <option value="Kinyarwanda">Kinyarwanda</option>
+      </select>
+      <button id="logout" type="button">Logout</button>
+    </div>
   </header>
   <main>
 
+    <app-lesson-module *ngFor="let lessonModule of lessonModuleList" [lessonModule]="lessonModule"></app-lesson-module>    
+    <!--
     <div class="unit">
       <div class="unit-head">
         <h2>About DMV Testing</h2>
@@ -121,7 +129,7 @@
         <p>> Extra Resources</p>
         <p class="check">✓</p>
       </div>
-    </div>
+    </div>-->
 
     <section>
       <div id="progress-labels">
