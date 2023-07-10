@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --tea: #CCD5AE;
+    --lighttea: #DEEBC3;
+    --lightgray: #EBEBEB;
+    --smoke: #F5F5F5;
+}
+
+html {
+    background-color: var(--smoke);
+}
