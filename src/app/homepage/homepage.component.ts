@@ -10,7 +10,7 @@ import { LessonService } from '../lesson.service';
 
     <section>
       <h2 id="progress-check">Progress Check</h2>
-      <div id="progress-labels">
+      <!--<div id="progress-labels">
         <p style="justify-self: end;">100%</p>
         <p style="justify-self: end;">70%</p>
         <p style="justify-self: end;">70%</p>
@@ -18,10 +18,10 @@ import { LessonService } from '../lesson.service';
         <p style="justify-self: end;">70%</p>
         <p style="justify-self: end;">70%</p>
         <p style="justify-self: end;">99%</p>
-      </div>
+      </div>-->
       <div id="progress">
-        <!--<div style="background-color: #9FB654; border-radius: 40px 0 0 40px;"></div> #A7BC62-->
-        <div style="background-color: #A9BB63; border-radius: 40px 0 0 40px;"></div>
+        <div style="background-color: #A1B455; border-radius: 40px 0 0 40px;"></div>
+        <div style="background-color: #A9BB63;"></div>
         <div style="background-color: #AFC270;"></div>
         <div style="background-color: #B7C87E;"></div>
         <div style="background-color: #BFCE8D;"></div>

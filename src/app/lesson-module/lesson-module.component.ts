@@ -10,11 +10,14 @@ import { LessonModule } from '../lessonmodule';
       </div>
       <ul>
         <li>Study</li>
-        <li>Practice</li>
+        <li *ngIf="lessonModule.hasPracticeTests; else elseBlock">Practice</li>
+        <ng-template #elseBlock>
+          <br><br>
+        </ng-template>
       </ul>
       <div class="unit-foot">
-        <p> Extra Resources</p>
-        <p class="check">✓</p>
+        <p class="resource">> Extra Resources</p>
+        <p class="check" [class.hide]="!lessonModule.completed">✓</p>
       </div>
     </div>
   `,
@@ -22,5 +25,4 @@ import { LessonModule } from '../lessonmodule';
 })
 export class LessonModuleComponent {
   @Input() lessonModule!: LessonModule;
-
 }
