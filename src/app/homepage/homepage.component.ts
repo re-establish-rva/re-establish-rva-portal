@@ -20,14 +20,14 @@ import { LessonService } from '../lesson.service';
         <p style="justify-self: end;">99%</p>
       </div>-->
       <div id="progress">
-        <div style="background-color: #A1B455; border-radius: 40px 0 0 40px;"></div>
-        <div style="background-color: #A9BB63;"></div>
+        <div style="background-color: #A9BB63; border-radius: 40px 0 0 40px;"></div>
         <div style="background-color: #AFC270;"></div>
         <div style="background-color: #B7C87E;"></div>
         <div style="background-color: #BFCE8D;"></div>
         <div style="background-color: #C7D49B;"></div>
         <div style="background-color: #CFDAA9;"></div>
-        <div style="background-color: #D8E0B8; border-radius: 0 40px 40px 0;"></div>
+        <div style="background-color: #D8E0B8;"></div>
+        <div style="background-color: #E0E6C6; border-radius: 0 40px 40px 0;"></div>
       </div>
       <p id="history">> View Test History</p>
     </section>
