@@ -1,8 +1,8 @@
   main {
     display: grid;
     column-gap: 80px;
-    row-gap: 14px;
-    grid-template-columns: repeat(auto-fill, minmax(20vw, 20vw));
+    row-gap: 18px;
+    grid-template-columns: repeat(auto-fill, minmax(18vw, 18vw));
     margin-top: 6vh;
     justify-content: center;
   }
