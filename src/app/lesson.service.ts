@@ -10,7 +10,7 @@ export class LessonService {
     {
       id: 1,
       title: "About DMV Test",
-      completed: true,
+      completed: false,
       hasPracticeTests: false
     },
     {
@@ -63,6 +63,12 @@ export class LessonService {
   
   getLessonModuleById(id: number): LessonModule | undefined {
     return this.lessonModuleList.find(LessonModule => LessonModule.id === id);
+  }
+
+  updateCompletion(id: number): void {
+    if (this.getLessonModuleById(id) !== undefined) {
+      this.getLessonModuleById(id)!.completed = !this.getLessonModuleById(id)!.completed;
+    } 
   }
 
   constructor() { }
