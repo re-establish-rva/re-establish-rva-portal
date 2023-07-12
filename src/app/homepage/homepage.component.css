@@ -15,7 +15,7 @@
     background-color: white;
     border-radius: 50px;
     box-shadow: 0px 0px 10px var(--lightgray);
-    margin-top: 6vh;
+    margin-top: 5vh;
     column-span: 4;
     display: flex;
     flex-direction: column;
@@ -32,8 +32,8 @@
   
   #progress-labels {
     width: 75vw;
+    text-align: center;
     margin-bottom: 10px;
-    margin-left: 3vw;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     column-gap: 0.5vw;
@@ -54,5 +54,14 @@
     font-size: 18px;
     text-align: left;
     margin-bottom:20px;
-    margin-top:10px;
+    margin-top:15px;
   }
+
+  #bar1 { background-color: #A9BB63; border-radius: 40px 0 0 40px;}
+  #bar2 { background-color: #AFC270; }
+  #bar3 { background-color: #B7C87E; }
+  #bar4 { background-color: #BFCE8D; }
+  #bar5 { background-color: #C7D49B; }
+  #bar6 { background-color: #CFDAA9; }
+  #bar7 { background-color: #D8E0B8; }
+  #bar8 { background-color: #E0E6C6; border-radius: 0 40px 40px 0;}
