@@ -9,7 +9,7 @@ import { LessonModule } from '../lessonmodule';
         <h2>{{lessonModule.title}}</h2>
       </div>
       <ul>
-        <li class="arrow"><span>Study</span></li>
+        <a [routerLink]="['/study',lessonModule.id]" id="study"><li class="arrow"><span>Study</span></li></a>
         <li class="arrow" *ngIf="lessonModule.hasPracticeTests; else elseBlock">Practice</li>
         <ng-template #elseBlock>
           <li class="no-arrow"></li>

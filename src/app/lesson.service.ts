@@ -16,43 +16,43 @@ export class LessonService {
     {
       id: 2,
       title: "Signals, Signs, and Pavement Markings",
-      completed: true,
+      completed: false,
       hasPracticeTests: true
     },
     {
       id: 3,
       title: "Safe Driving",
-      completed: true,
+      completed: false,
       hasPracticeTests: true
     },
     {
       id: 4,
       title: "Seatbelts, Airbags, and Child Safety Seats",
-      completed: true,
+      completed: false,
       hasPracticeTests: true
     },
     {
       id: 5,
       title: "Penalties",
-      completed: true,
+      completed: false,
       hasPracticeTests: true
     },
     {
       id: 6,
       title: "License Types",
-      completed: true,
+      completed: false,
       hasPracticeTests: false
     },
     {
       id: 7,
       title: "Other Information",
-      completed: true,
+      completed: false,
       hasPracticeTests: false
     },
     {
       id: 8,
       title: "Final Exam",
-      completed: true,
+      completed: false,
       hasPracticeTests: true
     },
   ];
@@ -66,9 +66,9 @@ export class LessonService {
   }
 
   updateCompletion(id: number): void {
-    if (this.getLessonModuleById(id) !== undefined) {
-      this.getLessonModuleById(id)!.completed = !this.getLessonModuleById(id)!.completed;
-    } 
+    if (this.getLessonModuleById(id) !== undefined && this.getLessonModuleById(id)!.completed === false) {
+      this.getLessonModuleById(id)!.completed = true;
+    }
   }
 
   constructor() { }
