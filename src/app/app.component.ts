@@ -9,9 +9,9 @@ import { LessonService } from './lesson.service';
 export class AppComponent {
   title = 're-establish-rva-portal';
   
-  constructor(private yaylesson: LessonService) {}
+  constructor(private lessonService: LessonService) {}
 
-  completeLesson(id: number): void {
-    this.yaylesson.updateCompletion(id);
+  logout(): void {
+    this.lessonService.clearStorage();
   }
 }
