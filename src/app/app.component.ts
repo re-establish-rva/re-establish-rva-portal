@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LessonService } from './lesson.service';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 're-establish-rva-portal';
   
+  constructor(private yaylesson: LessonService) {}
+
+  completeLesson(id: number): void {
+    this.yaylesson.updateCompletion(id);
+  }
 }
