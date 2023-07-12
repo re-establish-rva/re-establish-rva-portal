@@ -10,24 +10,33 @@ import { LessonService } from '../lesson.service';
 
     <section>
       <h2 id="progress-check">Progress Check</h2>
-      <!--<div id="progress-labels">
-        <p style="justify-self: end;">100%</p>
+      <div id="progress-labels">
+        <p>Module 1</p>
+        <p>Module 2</p>
+        <p>Module 3</p>
+        <p>Module 4</p>
+        <p>Module 5</p>
+        <p>Module 6</p>
+        <p>Module 7</p>
+        <p>Module 8</p>
+        <!--<p style="justify-self: end;">100%</p>
         <p style="justify-self: end;">70%</p>
         <p style="justify-self: end;">70%</p>
         <p style="justify-self: end;">70%</p>
         <p style="justify-self: end;">70%</p>
         <p style="justify-self: end;">70%</p>
         <p style="justify-self: end;">99%</p>
-      </div>-->
+        <div style="display: grid; grid-template-columns: repeat(6, 1fr);">
+          <p>50%</p>
+          <p>60%</p>
+          <p>70%</p>
+          <p>80%</p>
+          <p>90%</p>
+          <p>100%</p>
+        </div>-->
+      </div>
       <div id="progress">
-        <div style="background-color: #A9BB63; border-radius: 40px 0 0 40px;"></div>
-        <div style="background-color: #AFC270;"></div>
-        <div style="background-color: #B7C87E;"></div>
-        <div style="background-color: #BFCE8D;"></div>
-        <div style="background-color: #C7D49B;"></div>
-        <div style="background-color: #CFDAA9;"></div>
-        <div style="background-color: #D8E0B8;"></div>
-        <div style="background-color: #E0E6C6; border-radius: 0 40px 40px 0;"></div>
+        <div *ngFor="let style of barStyleIds" id="{{style}}"></div>
       </div>
       <p id="history">> View Test History</p>
     </section>
@@ -37,6 +46,7 @@ import { LessonService } from '../lesson.service';
 })
 export class HomepageComponent {
 
+  barStyleIds: string[] = ["bar1", "bar2", "bar3", "bar4", "bar5", "bar6", "bar7", "bar8"];
   lessonModuleList: LessonModule[] = [];
 
   constructor(private lesson: LessonService) {
