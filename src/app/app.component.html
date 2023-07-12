@@ -3,7 +3,7 @@
 <html>
 <body>
   <header>
-    <img id="logo" src="./assets/ReEstablish-Richmond.png" alt="ReEstablish Richmond logo" />
+    <a [routerLink]="['/']"><img id="logo" src="./assets/ReEstablish-Richmond.png" alt="ReEstablish Richmond logo" /></a>
     <div>
       <select name="languages" id="language">
         <option value="Arabic">Arabic</option>
@@ -12,11 +12,11 @@
         <option value="Swahili">Swahili</option>
         <option value="Kinyarwanda">Kinyarwanda</option>
       </select>
-      <button id="logout" type="button" (click)="completeLesson(1)">Logout</button>
+      <button id="logout" type="button">Logout</button>
     </div>
   </header>
   
-  <router-outlet></router-outlet> 
-  
+  <router-outlet></router-outlet>
+
 </body>
 </html>
