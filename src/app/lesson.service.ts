@@ -6,7 +6,7 @@ import { LessonModule } from './lessonmodule';
 })
 export class LessonService {
 
-  lessonModuleList: LessonModule[] = [
+  lessonModuleList: LessonModule[] = localStorage.getItem('lm-list') ? JSON.parse(localStorage.getItem('lm-list')!) : [
     {
       id: 1,
       title: "About DMV Test",
@@ -68,7 +68,12 @@ export class LessonService {
   updateCompletion(id: number): void {
     if (this.getLessonModuleById(id) !== undefined && this.getLessonModuleById(id)!.completed === false) {
       this.getLessonModuleById(id)!.completed = true;
+      localStorage.setItem('lm-list', JSON.stringify(this.lessonModuleList));
     }
+  }
+
+  clearStorage(): void {
+    localStorage.clear();
   }
 
   constructor() { }
