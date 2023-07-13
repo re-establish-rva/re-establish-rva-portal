@@ -1,9 +1,9 @@
 main {
   display: grid;
-  column-gap: 80px;
-  row-gap: 18px;
+  column-gap: 60px;
+  row-gap: 16px;
   grid-template-columns: repeat(auto-fill, minmax(18vw, 18vw));
-  margin-top: 6vh;
+  margin-top: 5vh;
   justify-content: center;
 }
 
@@ -15,7 +15,7 @@ section {
   background-color: white;
   border-radius: 50px;
   box-shadow: 0px 0px 10px var(--lightgray);
-  margin-top: 5vh;
+  margin-top: 3vh;
   column-span: 4;
   display: flex;
   flex-direction: column;
@@ -26,17 +26,24 @@ section {
 
 #progress-check {
   text-align: left;
-  margin-bottom:30px;
+  margin-bottom:18px;
   margin-top:20px;
 }
 
 #progress-labels {
   width: 75vw;
+  height: 35px;
+  font-size: 0.75em;
+  font-weight: bold;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   column-gap: 0.5vw;
+}
+
+#progress-labels p {
+  margin-top: auto;
 }
 
 #progress {
@@ -51,10 +58,15 @@ section {
 }
 
 #history {
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
   margin-bottom:20px;
   margin-top:15px;
+  transition: 0.35s;
+}
+
+#history:hover {
+  padding-left: 0.4vw;
 }
 
 #bar1 { background-color: #A9BB63; border-radius: 40px 0 0 40px;}
@@ -65,3 +77,18 @@ section {
 #bar6 { background-color: #CFDAA9; }
 #bar7 { background-color: #D8E0B8; }
 #bar8 { background-color: #E0E6C6; border-radius: 0 40px 40px 0;}
+
+.empty {
+  background-color: rgb(222, 222, 222) !important;
+}
+
+.arrow {
+  text-decoration: none;
+  padding-left: 0.5vw;
+  transition: 0.35s;
+}
+
+.arrow:hover {
+  text-decoration: underline;
+  padding-left: 0.2vw;
+}
