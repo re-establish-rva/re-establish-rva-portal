@@ -6,7 +6,7 @@ import { ActivatedRoute } from '@angular/router';
   selector: 'app-study',
   template: `
     <div class = "center">
-      <a [routerLink] = "['/']"><button class = "next" (click) = "completeLesson()">Next</button></a>
+      <a [routerLink] = "['/']"><button id="button" class = "next" (click) = "completeLesson()">Next</button></a>
     </div>
   `,
   styleUrls: ['./study.component.css']
