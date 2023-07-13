@@ -9,36 +9,14 @@ import { LessonService } from '../lesson.service';
     <app-lesson-module *ngFor="let lessonModule of lessonModuleList" [lessonModule]="lessonModule"></app-lesson-module>    
 
     <section>
-      <h2 id="progress-check">Progress Check</h2>
+      <h3 id="progress-check">Progress Check</h3>
       <div id="progress-labels">
-        <p>Module 1</p>
-        <p>Module 2</p>
-        <p>Module 3</p>
-        <p>Module 4</p>
-        <p>Module 5</p>
-        <p>Module 6</p>
-        <p>Module 7</p>
-        <p>Module 8</p>
-        <!--<p style="justify-self: end;">100%</p>
-        <p style="justify-self: end;">70%</p>
-        <p style="justify-self: end;">70%</p>
-        <p style="justify-self: end;">70%</p>
-        <p style="justify-self: end;">70%</p>
-        <p style="justify-self: end;">70%</p>
-        <p style="justify-self: end;">99%</p>
-        <div style="display: grid; grid-template-columns: repeat(6, 1fr);">
-          <p>50%</p>
-          <p>60%</p>
-          <p>70%</p>
-          <p>80%</p>
-          <p>90%</p>
-          <p>100%</p>
-        </div>-->
+        <p *ngFor="let lm of lessonModuleList">{{lm.title}}</p>
       </div>
       <div id="progress">
-        <div *ngFor="let style of barStyleIds" id="{{style}}"></div>
+        <div *ngFor="let style of barStyleIds; let i = index" id="{{style}}" [class.empty]="!lessonModuleList[i].completed"></div>
       </div>
-      <p id="history">> View Test History</p>
+      <p id="history">> <span class="arrow">View Test History</span></p>
     </section>
   </main>
   `,

@@ -1,5 +1,5 @@
 .unit {
-  height: 210px;
+  height: 180px;
   box-sizing: border-box;
   border-radius: 5px;
   box-shadow: 0px 0px 10px var(--lightgray);
@@ -15,7 +15,7 @@
   background-color: var(--tea)
     /*lightgray*/
   ;
-  height: 50px;
+  height: 45px;
   width: object-fit;
   padding-block: 1vh;
   padding-inline: 1vw;
@@ -33,7 +33,7 @@ ul {
 }
 
 li {
-  font-size: 20px;
+  font-size: 18px;
   width: fit-content;
   padding-right: 1vw;
   margin-left: 20px;
@@ -43,11 +43,11 @@ li {
 .unit-foot {
   text-align: center;
   float: bottom;
-  padding: 1vh 10px 2vh 0px;
+  padding: 1vh 10px 0vh 0px;
 }
 
 .resource {
-  font-size: 18px;
+  font-size: 16px;
   /*margin-right: 5vw;*/
   display: inline;
   transition: 0.35s;
@@ -91,7 +91,7 @@ li {
 
 .check {
   color: darkolivegreen;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   float: right;
   margin-right: 5px;

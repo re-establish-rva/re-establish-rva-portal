@@ -6,7 +6,7 @@ import { LessonModule } from '../lessonmodule';
   template: `
     <div class="unit">
       <div class="unit-head">
-        <h2>{{lessonModule.title}}</h2>
+        <h3>{{lessonModule.title}}</h3>
       </div>
       <ul>
         <a [routerLink]="['/study',lessonModule.id]" id="study"><li class="arrow"><span>Study</span></li></a>
