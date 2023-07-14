@@ -3,8 +3,13 @@
 <html>
 <body>
   <header>
-    <a [routerLink]="['/']"><img id="logo" src="./assets/ReEstablish-Richmond.png" alt="ReEstablish Richmond logo" /></a>
-    <div>
+    <a [routerLink]="['/']">
+      <picture>
+        <source media="(min-width: 450px)" srcset="./assets/ReEstablish-Richmond.png">
+        <img id="logo" src="./assets/Mini Reestablish RVA.png" alt="ReEstablish Richmond logo" />
+      </picture>
+    </a>
+    <div id="right-buttons">
       <select name="languages" id="language">
         <option value="Arabic">Arabic</option>
         <option value="Dari">Dari</option>
@@ -12,7 +17,7 @@
         <option value="Swahili">Swahili</option>
         <option value="Kinyarwanda">Kinyarwanda</option>
       </select>
-      <button id="logout" type="button" (click)="logout()">Logout</button>
+      <button id="logout" type="button" (click)="logout()"><img id="logout-icon" src="./assets/icons8-logout-96.png" alt="Logout"></button>
     </div>
   </header>
 
