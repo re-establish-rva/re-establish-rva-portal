@@ -13,5 +13,10 @@ export class AppComponent {
 
   logout(): void {
     this.lessonService.clearStorage();
+    window.location.reload();
+  }
+
+  changeLang(): void {
+    
   }
 }
