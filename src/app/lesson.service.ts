@@ -9,49 +9,49 @@ export class LessonService {
   lessonModuleList: LessonModule[] = localStorage.getItem('lm-list') ? JSON.parse(localStorage.getItem('lm-list')!) : [
     {
       id: 1,
-      title: "About DMV Testing",
+      title: "about_DMV_testing",
       completed: false,
       hasPracticeTests: false
     },
     {
       id: 2,
-      title: "Signals, Signs, and Pavement Markings",
+      title: "signals_signs_pavement",
       completed: false,
       hasPracticeTests: true
     },
     {
       id: 3,
-      title: "Safe Driving",
+      title: "safe_driving",
       completed: false,
       hasPracticeTests: true
     },
     {
       id: 4,
-      title: "Seat Belts, Airbags, and Child Safety Seats",
+      title: "seatbelts_airbags_child_safety_seats",
       completed: false,
       hasPracticeTests: true
     },
     {
       id: 5,
-      title: "Penalties",
+      title: "penalties",
       completed: false,
       hasPracticeTests: true
     },
     {
       id: 6,
-      title: "License Types",
+      title: "license_types",
       completed: false,
       hasPracticeTests: false
     },
     {
       id: 7,
-      title: "Other Information",
+      title: "other_info",
       completed: false,
       hasPracticeTests: false
     },
     {
       id: 8,
-      title: "Final Exam",
+      title: "final_exam",
       completed: false,
       hasPracticeTests: true
     },

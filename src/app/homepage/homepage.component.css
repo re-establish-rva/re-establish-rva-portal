@@ -3,7 +3,7 @@ main {
   column-gap: 80px;
   row-gap: 16px;
   grid-template-columns: repeat(auto-fill, 250px);
-  margin-top: 5vh;
+  /* margin-top: 5vh; */
   justify-content: center;
   justify-items: center;
 }
@@ -16,12 +16,12 @@ section {
   width: 84vw;
   grid-auto-flow: column;
   grid-column-end: span 4;
-  height: 25vh;
+  height: fit-content;
   max-height: 240px;
   background-color: white;
   border-radius: 50px;
   box-shadow: 0px 0px 10px var(--lightgray);
-  margin-top: 3vh;
+  margin-block: 3vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +36,7 @@ section {
 
 #progress-labels {
   width: 80vw;
-  height: 35px;
+  height: fit-content;
   font-size: 0.75em;
   font-weight: bold;
   text-align: center;
@@ -48,6 +48,8 @@ section {
 
 #progress-labels p {
   margin-top: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #progress {

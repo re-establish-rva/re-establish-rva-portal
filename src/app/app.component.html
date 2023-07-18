@@ -10,19 +10,21 @@
       </picture>
     </a>
     <div id="right-buttons">
-      <select name="languages" id="language">
-        <option value="ar" (click)="changeLang()">Arabic</option>
-        <option value="da" (click)="changeLang()">Dari</option>
-        <option value="en" (click)="changeLang()">English</option>
-        <option value="ki" (click)="changeLang()">Kinyarwanda</option>
-        <option value="pa" (click)="changeLang()">Pashto</option>
-        <option value="sw" (click)="changeLang()">Swahili</option>
+      <select name="languages" id="language" (change)="changeLang($event)">
+        <option value="en">English</option>
+        <option value="ar">Arabic</option>
+        <option value="da">Dari</option>
+        <option value="ki">Kinyarwanda</option>
+        <option value="pa">Pashto</option>
+        <option value="sw">Swahili</option>
       </select>
       <button id="logout" type="button" (click)="logout()"><img id="logout-icon" src="./assets/icons8-logout-96.png" alt="Logout"></button>
     </div>
   </header>
 
-  <router-outlet></router-outlet>
+  <div id="content">
+   <router-outlet></router-outlet>
+  </div>
 
 </body>
 </html>
