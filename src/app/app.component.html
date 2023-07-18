@@ -11,12 +11,12 @@
     </a>
     <div id="right-buttons">
       <select name="languages" id="language" (change)="changeLang($event)">
-        <option value="en">English</option>
-        <option value="ar">Arabic</option>
-        <option value="da">Dari</option>
-        <option value="ki">Kinyarwanda</option>
-        <option value="pa">Pashto</option>
-        <option value="sw">Swahili</option>
+        <option value="en">{{ "lang.EN" | translate }}</option>
+        <option value="ar">{{ "lang.AR" | translate }}</option>
+        <option value="da">{{ "lang.DA" | translate }}</option>
+        <option value="ki">{{ "lang.KI" | translate }}</option>
+        <option value="pa">{{ "lang.PA" | translate }}</option>
+        <option value="sw">{{ "lang.SW" | translate }}</option>
       </select>
       <button id="logout" type="button" (click)="logout()"><img id="logout-icon" src="./assets/icons8-logout-96.png" alt="Logout"></button>
     </div>

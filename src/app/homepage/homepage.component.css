@@ -19,6 +19,7 @@ section {
   height: fit-content;
   max-height: 240px;
   background-color: white;
+  padding-inline: 10px;
   border-radius: 50px;
   box-shadow: 0px 0px 10px var(--lightgray);
   margin-block: 3vh;
@@ -30,6 +31,7 @@ section {
 }
 
 #progress-check {
+  text-align: center;
   margin-bottom:18px;
   margin-top: min(20px);
 }
@@ -78,6 +80,7 @@ section {
 
 #history {
   font-size: 16px;
+  text-align: center;
   margin-bottom:20px;
   margin-top:15px;
   transition: 0.35s;
