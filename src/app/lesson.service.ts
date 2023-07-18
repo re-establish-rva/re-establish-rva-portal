@@ -9,7 +9,7 @@ export class LessonService {
   lessonModuleList: LessonModule[] = localStorage.getItem('lm-list') ? JSON.parse(localStorage.getItem('lm-list')!) : [
     {
       id: 1,
-      title: "About DMV Test",
+      title: "About DMV Testing",
       completed: false,
       hasPracticeTests: false
     },
@@ -27,7 +27,7 @@ export class LessonService {
     },
     {
       id: 4,
-      title: "Seatbelts, Airbags, and Child Safety Seats",
+      title: "Seat Belts, Airbags, and Child Safety Seats",
       completed: false,
       hasPracticeTests: true
     },

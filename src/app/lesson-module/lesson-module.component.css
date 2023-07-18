@@ -17,8 +17,9 @@
   background-color: var(--tea)
     /*lightgray*/
   ;
-  height: 45px;
-  padding-block: 1vh;
+  height: fit-content;
+  min-height: 45px;
+  padding: 0.5rem;
   text-align: center;
   display: flex;
   justify-content: center;
