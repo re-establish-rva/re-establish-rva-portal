@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { LessonService } from './lesson.service';
 import { TranslateService } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ export class AppComponent {
   title = 're-establish-rva-portal';
   browserLang: any;
   
-  constructor(private lessonService: LessonService, private translate: TranslateService) {
+  constructor(private lessonService: LessonService, private translate: TranslateService, private router: Router) {
     translate.setDefaultLang('en');
     
     this.browserLang = localStorage.getItem("currLang");
@@ -19,8 +20,13 @@ export class AppComponent {
   }
 
   logout(): void {
+    if (localStorage.getItem("SessionUser")) {
+      localStorage.removeItem("SessionUser");
+      this.router.navigateByUrl("/login");
+    }
+    /*
     this.lessonService.clearStorage();
-    window.location.reload();
+    window.location.reload();*/
     //console.log(this.translate.getBrowserLang());
   }
 

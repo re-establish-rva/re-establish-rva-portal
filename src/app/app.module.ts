@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { LessonModuleComponent } from './lesson-module/lesson-module.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { StudyComponent } from './study/study.component';
+import { LoginComponent } from './login/login.component';
+import { AuthGuardService } from './auth-guard.service';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     return new TranslateHttpLoader(http);
@@ -19,7 +21,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     AppComponent,
     LessonModuleComponent,
     HomepageComponent,
-    StudyComponent
+    StudyComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,9 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
        }
     })
   ],
-  providers: [],
+  providers: [
+    AuthGuardService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
