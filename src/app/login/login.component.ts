@@ -6,11 +6,8 @@ import { Router } from '@angular/router';
   template: `
     <main>
       <div id="login-box">
-        <div id="head">
-          <h2>ReEstablish Richmond DMV Portal</h2>
-        </div>
+        <h2>ReEstablish Richmond DMV Portal</h2>
         <div class="h-center">
-          <button (click)="login()">{{ "login" | translate }}</button>
           <button (click)="login()">{{ "login" | translate }}</button>
         </div>
       </div>
