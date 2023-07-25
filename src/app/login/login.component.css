@@ -1,21 +1,29 @@
   main {
-    margin-top: 20vh;
+    margin-top: 15vh;
     display: flex;
     justify-content: center;
   }
   
   #login-box {
     width: 25vw;
-    min-width: 150px;
+    min-width: 225px;
     height: fit-content;
     background-color: white;
-    padding: 50px;
-    border-radius: 20px;
+    padding-bottom: 50px;
+    border-radius: 15px;
     box-shadow: 0px 0px 10px var(--lightgray);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    overflow: hidden;
+  }
+
+  #head {
+    background-color: var(--tea);
+    height: fit-content;
+    min-height: 45px;
+    padding: 40px;
   }
 
   h2 {
@@ -48,4 +56,5 @@
   .h-center {
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
