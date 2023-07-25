@@ -4,11 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-study',
-  template: `
-    <div class = "center">
-      <a [routerLink] = "['/']"><button id="button" class = "next" (click) = "completeLesson()">{{ "next" | translate }}</button></a>
-    </div>
-  `,
+  templateUrl: './study.component.html',
   styleUrls: ['./study.component.css']
 })
 
