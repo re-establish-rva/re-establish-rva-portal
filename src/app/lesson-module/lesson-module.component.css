@@ -103,6 +103,7 @@ a {
   display: none;
 }
 
+/*adjusts to different devices*/
 @media only screen and (max-width: 1000px) {
   /* .unit {
     height: fit-content;

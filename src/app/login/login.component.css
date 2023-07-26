@@ -4,6 +4,7 @@
     justify-content: center;
   }
   
+  /*design of the login*/
   #login-box {
     width: 25vw;
     min-width: 225px;
@@ -31,6 +32,7 @@
     text-align: center;
   }
   
+  /*button design for login and sign up*/
   button {
     background-color: #d0e2c1;
     border: none;

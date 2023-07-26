@@ -1,3 +1,4 @@
+/*framework for modules*/
 main {
   display: grid;
   column-gap: 80px;
@@ -7,10 +8,12 @@ main {
   justify-items: center;
 }
 
+/*keep module the same length*/
 app-lesson-module {
   min-width: 300px;
 }
 
+/*design of the modules*/
 section {
   width: 84vw;
   grid-auto-flow: column;
@@ -29,12 +32,14 @@ section {
   /* box-sizing: border-box; */
 }
 
+/*placement of progress bar*/
 #progress-check {
   text-align: center;
   margin-bottom: 18px;
   margin-top: 20px;
 }
 
+/*shape of progress bar titles*/
 #progress-labels {
   width: 80vw;
   height: fit-content;
@@ -47,12 +52,14 @@ section {
   column-gap: 0.5vw;
 }
 
+
 #progress-labels p {
   margin-top: auto;
   /* overflow: hidden;
   text-overflow: ellipsis; */
 }
 
+/*shape of progress bar */
 #progress {
   width: 80vw;
   min-height: 30px;
@@ -64,6 +71,7 @@ section {
   column-gap: 0.5vw;
 }
 
+/*ombre of green for each section of progress bar*/
 #bar1 { background-color: #A9BB63; border-radius: 40px 0 0 40px;}
 #bar2 { background-color: #AFC270; }
 #bar3 { background-color: #B7C87E; }
@@ -73,10 +81,12 @@ section {
 #bar7 { background-color: #D8E0B8; }
 #bar8 { background-color: #E0E6C6; border-radius: 0 40px 40px 0;}
 
+/*default color of progress bar*/
 .empty {
   background-color: rgb(222, 222, 222) !important;
 }
 
+/*design of view test history*/
 #history {
   font-size: 16px;
   text-align: center;
@@ -100,6 +110,7 @@ section {
   padding-left: 0.2vw;
 }
 
+/*adjusts to different devices*/
 @media only screen and (max-width: 1325px) {
   main {
     grid-template-columns: repeat(2, 300px);
