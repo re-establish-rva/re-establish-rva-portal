@@ -2,12 +2,6 @@
     "study": "Study",
     "practice": "Practice",
     "extra_resources": "Extra Resources",
-    "lang.AR": "Arabic",
-    "lang.DA": "Dari",
-    "lang.EN": "English",
-    "lang.KI": "Kinyarwanda",
-    "lang.PA": "Pashto",
-    "lang.SW": "Swahili",
     "progress_check": "Progress Check",
     "view_test_history": "View Test History",
     "about_DMV_testing": "About DMV Testing",
@@ -19,5 +13,6 @@
     "other_info": "Other Information",
     "final_exam": "Final Exam",
     "next": "Next",
-    "login": "Login"
+    "login": "Login",
+    "sign_up": "Sign Up"
 }

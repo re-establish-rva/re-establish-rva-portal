@@ -72,8 +72,8 @@ export class LessonService {
     }
   }
 
-  clearStorage(): void {
-    localStorage.clear();
+  clearProgress(): void {
+    this.lessonModuleList.forEach((lesson) => lesson.completed = false);
   }
 
   constructor() { }

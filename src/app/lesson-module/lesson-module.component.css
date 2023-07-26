@@ -1,12 +1,12 @@
 .unit {
-  height: fit-content;
+  /* height: fit-content; */
   padding-bottom: 15px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px var(--lightgray);
   background-color: white;
+  position: relative;
   overflow: hidden;
   transition: 0.25s;
-  position: relative;
 }
 
 .unit:hover {
@@ -14,10 +14,8 @@
 }
 
 .unit-head {
-  background-color: var(--tea)
-    /*lightgray*/
-  ;
-  height: fit-content;
+  background-color: var(--tea);
+  /* height: fit-content; */
   min-height: 45px;
   padding: 0.5rem;
   text-align: center;
@@ -40,6 +38,10 @@ li {
   margin-bottom: 0.5vh;
 }
 
+a {
+  text-decoration: none;
+}
+
 .unit-foot {
   text-align: center;
   padding: 5px 10px 0px 0px;
@@ -48,12 +50,8 @@ li {
 .resource {
   font-size: 16px;
   /*margin-right: 5vw;*/
-  display: inline;
+  /* display: inline; */
   transition: 0.35s;
-}
-
-#study {
-  text-decoration:none;
 }
 
 .arrow {
@@ -93,12 +91,12 @@ li {
   color: darkolivegreen;
   font-size: 18px;
   font-weight: bold;
-  float: right;
+  /* float: right; */
   margin-right: 5px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   position: absolute;
   right: 8px;
-  bottom: 10px;
+  bottom: 11px;
 }
 
 .hide {
@@ -106,9 +104,9 @@ li {
 }
 
 @media only screen and (max-width: 1000px) {
-  .unit {
+  /* .unit {
     height: fit-content;
-  }
+  } */
   li {
     font-size: 20px;
   }

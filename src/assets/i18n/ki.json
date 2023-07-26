@@ -2,12 +2,6 @@
     "study": "Kwiga",
     "practice": "Witoze",
     "extra_resources": "Ibikoresho by'inyongera",
-    "lang.AR": "Icyarabu",
-    "lang.DA": "Dari",
-    "lang.EN": "Icyongereza",
-    "lang.KI": "Kinyarwanda",
-    "lang.PA": "Pashto",
-    "lang.SW": "Igiswahiri",
     "progress_check": "Kugenzura Amajyambere",
     "view_test_history": "Reba Amateka y'Ikizamini",
     "about_DMV_testing": "Ibyerekeye Ikizamini cya DMV",
@@ -19,5 +13,6 @@
     "other_info": "Andi Makuru",
     "final_exam": "Ikizamini gisoza",
     "next": "Ibikurikira",
-    "login": "Gufungura"
+    "login": "Gufungura",
+    "sign_up": "Iyandikishe"
 }

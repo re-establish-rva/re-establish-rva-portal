@@ -12,8 +12,10 @@ export class HomepageComponent {
   barStyleIds: string[] = ["bar1", "bar2", "bar3", "bar4", "bar5", "bar6", "bar7", "bar8"];
   lessonModuleList: LessonModule[] = [];
 
-  constructor(private lesson: LessonService) {
-    this.lessonModuleList = lesson.getAllLessonModules();
+  constructor(private lesson: LessonService) {}
+
+  ngOnInit() {
+    this.lessonModuleList = this.lesson.getAllLessonModules();
   }
 
 }

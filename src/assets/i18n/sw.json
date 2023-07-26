@@ -2,12 +2,6 @@
     "study": "Jifunze",
     "practice": "Fanya mazoezi",
     "extra_resources": "Rasilimali za Ziada",
-    "lang.AR": "Kiarabu",
-    "lang.DA": "Dari",
-    "lang.EN": "Kiingereza",
-    "lang.KI": "Kinyarwanda",
-    "lang.PA": "Kipashto",
-    "lang.SW": "Kiswahili",
     "progress_check": "Ukaguzi wa Maendeleo",
     "view_test_history": "Tazama Historia ya Mtihani",
     "about_DMV_testing": "Kuhusu Jaribio la DMV",
@@ -19,5 +13,6 @@
     "other_info": "Taarifa Nyingine",
     "final_exam": "Mtihani wa mwisho",
     "next": "Inayofuata",
-    "login": "Ingia"
+    "login": "Ingia",
+    "sign_up": "Jisajili"
 }

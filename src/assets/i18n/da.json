@@ -2,12 +2,6 @@
     "study": "",
     "practice": "",
     "extra_resources": "",
-    "lang.AR": "",
-    "lang.DA": "",
-    "lang.EN": "",
-    "lang.KI": "",
-    "lang.PA": "",
-    "lang.SW": "",
     "progress_check": "",
     "view_test_history": "",
     "about_DMV_testing": "",
@@ -19,5 +13,6 @@
     "other_info": "",
     "final_exam": "",
     "next": "",
-    "login": "ورود"
+    "login": "ورود",
+    "sign_up": "ثبت نام"
 }

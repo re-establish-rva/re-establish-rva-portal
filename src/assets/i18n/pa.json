@@ -2,12 +2,6 @@
     "study": "مطالعه",
     "practice": "تمرین",
     "extra_resources": "اضافي سرچینې",
-    "lang.AR": "عربي",
-    "lang.DA": "دري",
-    "lang.EN": "انګلیسي",
-    "lang.KI": "کینیاروندا",
-    "lang.PA": "پښتو",
-    "lang.SW": "سواحلي",
     "progress_check": "د پرمختګ چک",
     "view_test_history": "د ازموینې تاریخ وګورئ",
     "about_DMV_testing": "د DMV ازموینې په اړه",
@@ -19,5 +13,6 @@
     "other_info": "نور معلومات",
     "final_exam": "وروستۍ ازموينه",
     "next": "بل",
-    "login": "د ننه کیدل"
+    "login": "د ننه کیدل",
+    "sign_up": "ګډون کول"
 }

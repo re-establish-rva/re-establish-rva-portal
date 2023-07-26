@@ -1,25 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LessonService } from '../lesson.service';
 
 @Component({
   selector: 'app-login',
-  template: `
-    <main>
-      <div id="login-box">
-        <h2>ReEstablish Richmond DMV Portal</h2>
-        <div class="h-center">
-          <button (click)="login()">{{ "login" | translate }}</button>
-        </div>
-      </div>
-    </main>
-  `,
+  templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
   
-  constructor(private router: Router) {}
+  constructor(private router: Router, private lesson: LessonService) {}
 
   login() {
+    localStorage.setItem('SessionUser', '1');
+    this.router.navigateByUrl("/home");
+  }
+
+  signup() {
+    localStorage.removeItem('lm-list');
+    this.lesson.clearProgress();
     localStorage.setItem('SessionUser', '1');
     this.router.navigateByUrl("/home");
   }

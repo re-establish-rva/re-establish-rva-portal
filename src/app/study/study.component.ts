@@ -15,5 +15,6 @@ export class StudyComponent {
 
   completeLesson(): void {
     this.lessonService.updateCompletion(parseInt(this.route.snapshot.params['id'], 10));
+    console.log(localStorage);
   }
 }
