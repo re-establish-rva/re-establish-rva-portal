@@ -3,14 +3,14 @@
       <h3>{{ lessonModule.title | translate }}</h3>
     </div>
     <ul>
-      <a [routerLink]="['/study',lessonModule.id]"><li class="arrow"><span>{{ 'study' | translate }}</span></li></a>
-      <li class="arrow" *ngIf="lessonModule.hasPracticeTests; else elseBlock">{{ 'practice' | translate }}</li>
+      <a [routerLink]="['/study',lessonModule.id]"><li class="arrow"><span>{{ 'study' | translate }}</span></li></a><!--creates the study button on each module-->
+      <li class="arrow" *ngIf="lessonModule.hasPracticeTests; else elseBlock">{{ 'practice' | translate }}</li> <!-- creates the practice button on each module-->
       <ng-template #elseBlock>
         <li class="no-arrow"></li>
       </ng-template>
     </ul>
     <div class="unit-foot">
-      <p class="resource">> <span class="arrow2">{{ 'extra_resources' | translate }}</span></p>
-      <p class="check" [class.hide]="!lessonModule.completed">✓</p>
+      <p class="resource">> <span class="arrow2">{{ 'extra_resources' | translate }}</span></p> <!--creates the extra-resources button-->
+      <p class="check" [class.hide]="!lessonModule.completed">✓</p> <!--creates the check for completioin after user completes the module-->
     </div>
   </div>
