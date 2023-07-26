@@ -9,12 +9,12 @@ import { ActivatedRoute } from '@angular/router';
 })
 
 export class StudyComponent {
-  constructor(private route: ActivatedRoute, private lessonService: LessonService){
-    
-  }
 
+  constructor(private route: ActivatedRoute, private lessonService: LessonService){}
+
+  // Calls LessonService to update the 'completed' attribute of the current LessonModule 
   completeLesson(): void {
     this.lessonService.updateCompletion(parseInt(this.route.snapshot.params['id'], 10));
-    console.log(localStorage);
   }
+
 }

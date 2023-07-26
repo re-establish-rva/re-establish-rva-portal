@@ -12,6 +12,7 @@ import { StudyComponent } from './study/study.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuardService } from './auth-guard.service';
 
+// Function for Ahead Of Time (AOT) compilation for ngx-translate
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     return new TranslateHttpLoader(http);
 }
@@ -26,7 +27,9 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, // Permits app-routing.module.ts
+
+    // For ngx-translate:
     HttpClientModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en',
@@ -38,8 +41,9 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     })
   ],
   providers: [
-    AuthGuardService
+    AuthGuardService // CanActivate guard service
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

@@ -9,11 +9,12 @@ import { LessonService } from '../lesson.service';
 })
 export class HomepageComponent {
 
-  barStyleIds: string[] = ["bar1", "bar2", "bar3", "bar4", "bar5", "bar6", "bar7", "bar8"];
+  barStyleIds: string[] = ["bar1", "bar2", "bar3", "bar4", "bar5", "bar6", "bar7", "bar8"]; // For progress bar styling
   lessonModuleList: LessonModule[] = [];
 
   constructor(private lesson: LessonService) {}
 
+  // Initializes lessonModuleList to the current array of LessonModules in LessonService
   ngOnInit() {
     this.lessonModuleList = this.lesson.getAllLessonModules();
   }

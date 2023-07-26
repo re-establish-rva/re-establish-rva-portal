@@ -1,14 +1,18 @@
-import { Injectable } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+/* Old LanguageService file, may be deleted later */
 
-@Injectable({
-  providedIn: 'root'
-})
-export class LanguageService {
 
-  constructor(private translate: TranslateService) { }
+// import { Injectable } from '@angular/core';
+// import { TranslateService } from '@ngx-translate/core';
 
-  switchLang(lang: string) {
-    this.translate.use(lang);
-  }
-}
+// @Injectable({
+//   providedIn: 'root'
+// })
+// export class LanguageService {
+
+//   constructor(private translate: TranslateService) { }
+
+//   switchLang(lang: string) {
+//     this.translate.use(lang);
+//   }
+
+// }

@@ -6,6 +6,8 @@ import { LessonModule } from './lessonmodule';
 })
 export class LessonService {
 
+  /* lessonModuleList initialized to the last array of LessonModules stored in LocalStorage; 
+     otherwise, sets lessonModuleList to following default array */
   lessonModuleList: LessonModule[] = localStorage.getItem('lm-list') ? JSON.parse(localStorage.getItem('lm-list')!) : [
     {
       id: 1,
@@ -57,14 +59,19 @@ export class LessonService {
     },
   ];
 
+  constructor() { }
+
+  // Returns lessonModuleList
   getAllLessonModules(): LessonModule[] {
     return this.lessonModuleList;
   }
   
+  // Returns specific LessonModule from lessonModuleList based on the inputted id parameter
   getLessonModuleById(id: number): LessonModule | undefined {
     return this.lessonModuleList.find(LessonModule => LessonModule.id === id);
   }
 
+  // If identified LessonModule is not completed already, sets its 'completed' attribute to true and creates/updates the LocalStorage array
   updateCompletion(id: number): void {
     if (this.getLessonModuleById(id) !== undefined && this.getLessonModuleById(id)!.completed === false) {
       this.getLessonModuleById(id)!.completed = true;
@@ -72,9 +79,9 @@ export class LessonService {
     }
   }
 
+  // Resets progress; sets 'completed' attributes of all the LessonModules to false
   clearProgress(): void {
     this.lessonModuleList.forEach((lesson) => lesson.completed = false);
   }
 
-  constructor() { }
 }

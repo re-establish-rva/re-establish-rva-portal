@@ -5,6 +5,7 @@ import { StudyComponent } from './study/study.component';
 import { LoginComponent } from './login/login.component';
 import { AuthenticationGuard } from './authentication.guard';
 
+// Contains the route information of the web portal
 const routes: Routes = [
   {
     path: "",

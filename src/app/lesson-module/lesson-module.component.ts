@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { LessonModule } from '../lessonmodule';
-import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-lesson-module',
@@ -8,6 +7,8 @@ import { LanguageService } from '../language.service';
   styleUrls: ['./lesson-module.component.css']
 })
 export class LessonModuleComponent {
+
+  // Sets the variable lessonModule to the LessonModule value inputted into its html element
   @Input() lessonModule!: LessonModule;
 
   constructor() {}
