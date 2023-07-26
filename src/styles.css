@@ -6,6 +6,7 @@
     font-family: sans-serif;
 }
 
+/*initialize CSS color variables for other CSS files to use*/
 :root {
     --tea: #CCD5AE;
     --lighttea: #DEEBC3;
