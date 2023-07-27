@@ -1,0 +1,27 @@
+<!-- <body> -->
+
+<header>
+  <a [routerLink]="['/']">
+    <picture>
+      <source media="(min-width: 450px)" srcset="./assets/ReEstablish-Richmond.png">
+      <img id="logo" src="./assets/Mini Reestablish RVA.png" alt="ReEstablish Richmond logo" /> <!--reestablish richmond logo-->
+    </picture>
+  </a>
+  <div class="right-buttons">
+    <select name="languages" id="language" (change)="changeLang($event)"> <!--language dropdown menu-->
+      <option value="en" [selected]="browserLang === 'en'">English</option> <!--english option-->
+      <option value="ar" [selected]="browserLang === 'ar'">عربي</option> <!--arabic option-->
+      <option value="da" [selected]="browserLang === 'da'">Dari</option> <!--dari option-->
+      <option value="ki" [selected]="browserLang === 'ki'">Kinyarwanda</option> <!--kinyarwanda option-->
+      <option value="pa" [selected]="browserLang === 'pa'">پښتو</option> <!--pastho option-->
+      <option value="sw" [selected]="browserLang === 'sw'">Kiswahili</option> <!--kishwahili option-->
+    </select>
+    <button id="logout" type="button" (click)="logout()"><img id="logout-icon" src="./assets/icons8-logout-96.png" alt="Logout"></button> <!--logout button-->
+  </div>
+</header>
+
+<div id="content">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- </body> -->

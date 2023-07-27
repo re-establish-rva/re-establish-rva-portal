@@ -1,0 +1,64 @@
+  main {
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*design of the login*/
+  #login-box {
+    width: 25vw;
+    min-width: 225px;
+    /* height: fit-content; */
+    background-color: white;
+    padding-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px var(--lightgray);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    overflow: hidden;
+  }
+
+  #head {
+    background-color: var(--tea);
+    height: fit-content;
+    min-height: 45px;
+    padding-block: 20px;
+    padding-inline: 50px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  
+  /*button design for login and sign up*/
+  button {
+    background-color: #d0e2c1;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin-top: 30px;
+    text-align: center;
+    /* text-decoration: none; */
+    font-size: 16px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button:active {
+    /* background-color: #bfc8a3; */
+    filter: brightness(90%);
+    box-shadow: 0px 5px 10px var(--lightgray);
+    transform: translateY(2px);
+  }
+  
+  .h-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
