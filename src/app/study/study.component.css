@@ -1,3 +1,76 @@
+#yay {
+  display: flex;
+  height: calc(100% - 70px);
+}
+
+nav {
+  width: 350px;
+  height: calc(100vh - 70px);;
+  background-color: #fcfcfc;
+  overflow-y: hidden;
+  flex-direction: column;
+  overflow: visible;
+}
+
+ul {
+  position: relative;
+}
+
+li {
+  font-size: 18px;
+  width: 350px;
+  padding-block: 5px;
+  transition: 0.2s;
+}
+
+li:hover {
+  background-color: var(--lighttea);
+  border-right: 3px solid #A9BB63;
+  box-shadow: 0px 2px 3px grey;
+}
+
+li:active {
+  background-color: var(--tea);
+  box-shadow: 0px 2px 3px grey;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#home-button {
+  color: black;
+  font-size: 22px;
+  font-weight: normal;
+  width: 330px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-block: 45px;
+}
+
+#lesson-title {
+  font-size: 22px;
+  padding-block: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.activeTab {
+  font-weight: bold;
+  background-color: var(--tea) !important;
+  box-shadow: 0px 0.5px 2px grey !important;
+}
+  
+main {
+  width: calc(100% - 350px);
+  height: calc(100% - 70px);
+  display: flex;
+  justify-content: center;
+}
+
   .next {
     background-color: #CCD5AE;
     border: none;
@@ -22,10 +95,7 @@
   .center{
     position: fixed;
     z-index: 1;
-    bottom: 0px;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    bottom: 25px;
   }
 
   

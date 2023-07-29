@@ -1,9 +1,6 @@
-<a [routerLink]="['/study',lessonModule.id]"><div class="unit">
-    <div class="unit-head">
-      <h3>{{ lessonModule.title | translate }}</h3>
-    </div><hr>
-    <main>
-      <img src="./assets/icon1.png" alt="about icon" id="icon"/>
-    </main>
+<a [routerLink]="['/study',lessonModule.id]" (click)="setActiveModule()">
+  <div>
+    <p>{{ lessonModule.title | translate }}</p>
     <p class="check" [class.hide]="!lessonModule.completed">✓</p>
-</div></a>
+  </div>
+</a>

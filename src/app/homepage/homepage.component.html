@@ -1,6 +1,12 @@
-<main>
-    <app-lesson-module *ngFor="let lessonModule of lessonModuleList" [lessonModule]="lessonModule"></app-lesson-module>    
-<!--creates the progress bar-->
+<div id="yay">
+  <nav>
+    <ul>
+      <a [routerLink]="['/']"><li id="home-button">Portal Home</li></a>
+      <p id="lesson-title">Lesson Modules</p>
+      <li *ngFor="let lessonModule of lessonModuleList"><app-lesson-module [lessonModule]="lessonModule"></app-lesson-module></li>
+    </ul>
+  </nav>
+  <div id="main">
     <section>
       <h3 id="progress-check">{{ "progress_check" | translate }}</h3> 
       <div id="progress-labels">
@@ -11,4 +17,6 @@
       </div>
       <p id="history">> <span class="arrow">{{ "view_test_history" | translate }}</span></p> <!--creates the view test history button-->
     </section>
- </main>
+  </div>
+</div>
+

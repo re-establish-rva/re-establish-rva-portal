@@ -1,3 +1,26 @@
+div {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 50px;
+}
+
+.check {
+  color: darkolivegreen;
+  /* font-size: 18px; */
+  font-weight: bold;
+  /* float: right; */
+  /* box-sizing: border-box; */
+  position: absolute;
+  right: 20px;
+}
+
+
+
+
+
+
+
 main {
   display: flex;
   justify-content: center;
@@ -100,18 +123,6 @@ a {
 
 .no-arrow {
   list-style-type: "";
-}
-
-.check {
-  color: darkolivegreen;
-  font-size: 18px;
-  font-weight: bold;
-  /* float: right; */
-  margin-right: 5px;
-  /* box-sizing: border-box; */
-  position: absolute;
-  right: 8px;
-  bottom: 11px;
 }
 
 .hide {

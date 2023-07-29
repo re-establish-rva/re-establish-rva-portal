@@ -1,11 +1,78 @@
 /*framework for modules*/
-main {
-  display: grid;
+nav {
+  width: 350px;
+  height: calc(100vh - 70px);;
+  background-color: #fcfcfc;
+  overflow-y: hidden;
+  flex-direction: column;
+  overflow: visible;
+}
+
+ul {
+  position: relative;
+}
+
+li {
+  font-size: 18px;
+  width: 350px;
+  padding-block: 5px;
+  transition: 0.2s;
+}
+
+li:hover {
+  background-color: var(--lighttea);
+  border-right: 3px solid #A9BB63;
+  box-shadow: 0px 2px 3px grey;
+}
+
+li:active {
+  background-color: var(--tea);
+  box-shadow: 0px 2px 3px grey;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#home-button {
+  color: black;
+  font-size: 22px;
+  background-color: var(--tea);
+  width: 330px;
+  box-shadow: 0px 0.5px 2px grey;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-block: 45px;
+}
+
+#lesson-title {
+  font-size: 22px;
+  padding-block: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+#yay {
+  display: flex;
+  height: calc(100% - 70px);
+}
+
+#main {
+  width: calc(100% - 350px);
+  height: calc(100% - 70px);
+  background-color: var(--lightgray);
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  /* display: grid;
   column-gap: 80px;
   row-gap: 16px;
   grid-template-columns: repeat(4, 250px);
   justify-content: center;
-  justify-items: center;
+  justify-items: center; */
 }
 
 /*keep module the same length*/
@@ -15,12 +82,12 @@ app-lesson-module {
 
 /*design of the modules*/
 section {
-  width: 84vw;
-  grid-auto-flow: column;
-  grid-column-end: span 4;
+  width: 90%;
+  /* grid-auto-flow: column;
+  grid-column-end: span 4; */
   height: fit-content;
   /* max-height: 240px; */
-  background-color: white;
+  background-color: #fcfcfc;
   padding-inline: 10px;
   border-radius: 50px;
   box-shadow: 0px 0px 10px var(--lightgray);
@@ -41,7 +108,7 @@ section {
 
 /*shape of progress bar titles*/
 #progress-labels {
-  width: 80vw;
+  width: 90%;
   height: fit-content;
   font-size: 0.75em;
   font-weight: bold;
@@ -61,7 +128,7 @@ section {
 
 /*shape of progress bar */
 #progress {
-  width: 80vw;
+  width: 90%;
   min-height: 30px;
   background-color: var(--lightgray);
   padding: 5px;
@@ -110,7 +177,7 @@ section {
   padding-left: 0.2vw;
 }
 
-/*adjusts to different devices*/
+/*
 @media only screen and (max-width: 1325px) {
   main {
     grid-template-columns: repeat(2, 300px);
@@ -144,5 +211,6 @@ section {
   #progress {
     display: none;
   }
-}
+}*/
+
 

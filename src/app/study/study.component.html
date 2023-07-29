@@ -1,5 +1,16 @@
-<div class = "center">
-  <a [routerLink] = "['/']"><button id="button" class = "next" (click) = "completeLesson()">{{ "next" | translate }}</button></a> 
+<div id="yay">
+  <nav>
+    <ul>
+      <a [routerLink]="['/']"><li id="home-button">Portal Home</li></a>
+      <p id="lesson-title">Lesson Modules</p>
+      <li *ngFor="let lessonModule of lessonModuleList" [class.activeTab]="lessonModule.id == lessonService.activeModuleID"><app-lesson-module [lessonModule]="lessonModule"></app-lesson-module></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="center">
+      <a [routerLink] = "['/']"><button id="button" class = "next" (click) = "completeLesson()">{{ "next" | translate }}</button></a> 
+    </div>
+  </main>
 </div>
 
 <!--creates the study button-->
