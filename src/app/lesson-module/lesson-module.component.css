@@ -2,10 +2,11 @@ div {
   display: flex;
   align-items: center;
   padding-left: 30px;
-  padding-right: 50px;
+  padding-right: 80px;
 }
 
 .check {
+  height: 24px;
   color: darkolivegreen;
   /* font-size: 18px; */
   font-weight: bold;
@@ -14,11 +15,6 @@ div {
   position: absolute;
   right: 20px;
 }
-
-
-
-
-
 
 
 main {

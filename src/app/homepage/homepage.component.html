@@ -1,7 +1,12 @@
 <div id="yay">
-  <nav>
+  <nav id="sidebar">
+    <button id="close" (click)="close()">X</button>
     <ul>
-      <a [routerLink]="['/']"><li id="home-button">Portal Home</li></a>
+      <a [routerLink]="['/']">
+        <li id="home-button">
+          <img src="./assets/icons8-home-24.png" alt="Home Icon" id="home-icon"/><p>Portal Home</p>
+        </li>
+      </a>
       <p id="lesson-title">Lesson Modules</p>
       <li *ngFor="let lessonModule of lessonModuleList"><app-lesson-module [lessonModule]="lessonModule"></app-lesson-module></li>
     </ul>
@@ -19,4 +24,6 @@
     </section>
   </div>
 </div>
+
+<button id="menu" (click)="expand()">Menu</button>
 

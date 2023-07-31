@@ -1,6 +1,6 @@
 <a [routerLink]="['/study',lessonModule.id]" (click)="setActiveModule()">
   <div>
     <p>{{ lessonModule.title | translate }}</p>
-    <p class="check" [class.hide]="!lessonModule.completed">✓</p>
+    <img src="./assets/check.png" alt="✓" class="check" [class.hide]="!lessonModule.completed" />
   </div>
 </a>

@@ -80,6 +80,7 @@ header {
 /*position content below top bar*/
 main {
   width: 100%;
+  height: calc(100% - 70px);
   position: relative;
   top: 70px;
 }

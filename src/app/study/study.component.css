@@ -4,7 +4,7 @@
 }
 
 nav {
-  width: 350px;
+  width: 305px;
   height: calc(100vh - 70px);;
   background-color: #fcfcfc;
   overflow-y: hidden;
@@ -18,7 +18,7 @@ ul {
 
 li {
   font-size: 18px;
-  width: 350px;
+  width: 305px;
   padding-block: 5px;
   transition: 0.2s;
 }
@@ -43,11 +43,15 @@ a {
   color: black;
   font-size: 22px;
   font-weight: normal;
-  width: 330px;
+  width: calc(305px - 20px);;
   display: flex;
   align-items: center;
   padding-left: 20px;
   margin-block: 45px;
+}
+
+#home-icon {
+  margin-right: 8px;
 }
 
 #lesson-title {
@@ -65,7 +69,7 @@ a {
 }
   
 main {
-  width: calc(100% - 350px);
+  width: calc(100% - 305px);
   height: calc(100% - 70px);
   display: flex;
   justify-content: center;
@@ -94,8 +98,77 @@ main {
   
   .center{
     position: fixed;
-    z-index: 1;
+    z-index: 0;
     bottom: 25px;
   }
+
+#menu {
+  background-color: var(--tea);
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 100px;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+#close {
+  background-color: lightgray;
+  width: 5px;
+  height: 5px;
+  padding: 15px;
+  border: none;
+  border-radius: 100px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 650px) {
+  nav {
+    width: 250px;
+    position: absolute;
+    overflow-y: scroll; 
+    overflow-x: hidden;
+    display: none;
+    z-index: 2;
+  }
+  ul {
+    margin-bottom: 50px;
+  }
+  li {
+    width: 250px;
+  }
+  #home-button {
+    width: 230px; /* 250px - 20px */
+  }
+  #sidebar {
+    display: none;
+  }
+  #sidebar.expanded {
+    display: flex;
+  }
+  main {
+    width: 100%;
+  }
+  #menu {
+    display: flex;
+  }
+  #close.expanded {
+    display: flex;
+  }
+}
+
+
 
   

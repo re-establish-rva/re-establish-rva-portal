@@ -1,9 +1,14 @@
 <div id="yay">
-  <nav>
+  <nav id="sidebar">
+    <button id="close" (click)="close()">X</button>
     <ul>
-      <a [routerLink]="['/']"><li id="home-button">Portal Home</li></a>
+      <a [routerLink]="['/']">
+        <li id="home-button">
+          <img src="./assets/icons8-home-24.png" alt="Home Icon" id="home-icon"/><p>Portal Home</p>
+        </li>
+      </a>
       <p id="lesson-title">Lesson Modules</p>
-      <li *ngFor="let lessonModule of lessonModuleList" [class.activeTab]="lessonModule.id == lessonService.activeModuleID"><app-lesson-module [lessonModule]="lessonModule"></app-lesson-module></li>
+      <li *ngFor="let lessonModule of lessonModuleList" [class.activeTab]="lessonModule.id == lessonService.activeModuleID" (click)="close()"><app-lesson-module [lessonModule]="lessonModule"></app-lesson-module></li>
     </ul>
   </nav>
   <main>
@@ -12,5 +17,7 @@
     </div>
   </main>
 </div>
+
+<button id="menu" (click)="expand()">Menu</button>
 
 <!--creates the study button-->

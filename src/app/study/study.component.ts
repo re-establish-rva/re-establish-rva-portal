@@ -23,13 +23,19 @@ export class StudyComponent {
     this.lessonModuleList = this.lessonService.getAllLessonModules();
   }
 
+  expand(): void {
+    document.getElementById("sidebar")!.classList.add("expanded");
+    document.getElementById("close")!.classList.add("expanded");
+  }
+  
+  close(): void {
+    document.getElementById("sidebar")!.classList.remove("expanded");
+    document.getElementById("close")!.classList.remove("expanded");
+  }
+
   // Calls LessonService to update the 'completed' attribute of the current LessonModule 
   completeLesson(): void {
     this.lessonService.updateCompletion(this.moduleID);
-  }
-
-  setActiveModuleID(id: number) {
-    this.moduleID = id;
   }
 
 }
