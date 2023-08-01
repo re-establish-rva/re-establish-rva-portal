@@ -1,10 +1,12 @@
 <div id="yay">
   <nav id="sidebar">
-    <button id="close" (click)="close()">X</button>
+    <button id="close" (click)="close()">
+      <img src="./assets/close.png" alt="X" id="close-icon" />
+    </button>
     <ul>
       <a [routerLink]="['/']">
         <li id="home-button">
-          <img src="./assets/icons8-home-24.png" alt="Home Icon" id="home-icon"/><p>{{ "portal_home" | translate }}</p>
+          <img src="./assets/home.png" alt="Home Icon" id="home-icon"/><p>{{ "portal_home" | translate }}</p>
         </li>
       </a>
       <p id="lesson-title">{{ "lesson_modules" | translate }}</p>
@@ -18,6 +20,8 @@
   </main>
 </div>
 
-<button id="menu" (click)="expand()">Menu</button>
+<button id="menu" (click)="expand()">
+  <img src="./assets/menu.png" alt="Menu" id="menu-icon" />
+</button>
 
 <!--creates the study button-->

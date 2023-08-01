@@ -46,12 +46,13 @@ a {
   width: 265px; /* 305px - 20px - 20px */
   display: flex;
   align-items: center;
-  padding-left: 20px;
+  padding-inline: 20px;
   margin-block: 45px;
 }
 
 #home-icon {
-  margin-right: 8px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 #lesson-title {
@@ -104,9 +105,7 @@ main {
 
 #menu {
   background-color: var(--tea);
-  width: 50px;
-  height: 50px;
-  padding: 25px;
+  padding: 20px 18px;
   border: none;
   border-radius: 100px;
   position: absolute;
@@ -126,11 +125,13 @@ main {
   filter: brightness(90%);
 }
 
+#menu-icon {
+  width: 30px;
+}
+
 #close {
   background-color: rgba(211, 211, 211, 0);
-  width: 5px;
-  height: 5px;
-  padding: 15px;
+  padding: 4px;
   border: none;
   border-radius: 100px;
   position: absolute;
@@ -144,6 +145,10 @@ main {
 }
 #close:hover {
   background-color: rgb(228, 228, 228);
+}
+
+#close-icon {
+  height: 24px;
 }
 
 @media only screen and (max-width: 650px) {

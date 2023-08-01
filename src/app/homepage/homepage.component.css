@@ -49,7 +49,8 @@ a {
 }
 
 #home-icon {
-  margin-right: 8px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 #lesson-title {
@@ -184,9 +185,7 @@ section {
 
 #menu {
   background-color: var(--tea);
-  width: 50px;
-  height: 50px;
-  padding: 25px;
+  padding: 20px 18px;
   border: none;
   border-radius: 100px;
   position: absolute;
@@ -206,11 +205,13 @@ section {
   filter: brightness(90%);
 }
 
+#menu-icon {
+  width: 30px;
+}
+
 #close {
   background-color: rgba(211, 211, 211, 0);
-  width: 5px;
-  height: 5px;
-  padding: 15px;
+  padding: 4px;
   border: none;
   border-radius: 100px;
   position: absolute;
@@ -224,6 +225,10 @@ section {
 }
 #close:hover {
   background-color: rgb(228, 228, 228);
+}
+
+#close-icon {
+  height: 24px;
 }
 
 
