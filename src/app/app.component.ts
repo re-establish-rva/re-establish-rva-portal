@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { LessonService } from './lesson.service';
 import { TranslateService } from '@ngx-translate/core';
 import { Router } from '@angular/router';
+import { LessonModule } from './lessonmodule';
 
 @Component({
   selector: 'app-root',
@@ -33,5 +34,12 @@ export class AppComponent {
   changeLang(event: any): void {
     this.translate.use(event.target.value); // Uses translations from the i18n json file signified by the value selected in language dropdown
     localStorage.setItem("currLang", event.target.value);
+  }
+
+  lessonModuleList: LessonModule[] = [];
+
+  // Initializes lessonModuleList to the current array of LessonModules in LessonService
+  ngOnInit() {
+    this.lessonModuleList = this.lessonService.getAllLessonModules();
   }
 }

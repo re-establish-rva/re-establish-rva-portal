@@ -19,4 +19,14 @@ export class HomepageComponent {
     this.lessonModuleList = this.lesson.getAllLessonModules();
   }
 
+  expand(): void {
+    document.getElementById("sidebar")!.classList.add("expanded");
+    document.getElementById("close")!.classList.add("expanded");
+  }
+  
+  close(): void {
+    document.getElementById("sidebar")!.classList.remove("expanded");
+    document.getElementById("close")!.classList.remove("expanded");
+  }
+
 }

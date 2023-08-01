@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { LessonModule } from '../lessonmodule';
+import { LessonService } from '../lesson.service';
 
 @Component({
   selector: 'app-lesson-module',
@@ -11,6 +12,10 @@ export class LessonModuleComponent {
   // Sets the variable lessonModule to the LessonModule value inputted into its html element
   @Input() lessonModule!: LessonModule;
 
-  constructor() {}
+  constructor(private lesson: LessonService) {}
+
+  setActiveModule() {
+    this.lesson.activeModuleID = this.lessonModule.id;
+  }
 
 }

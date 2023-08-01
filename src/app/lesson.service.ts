@@ -6,6 +6,8 @@ import { LessonModule } from './lessonmodule';
 })
 export class LessonService {
 
+  activeModuleID: number | null = null;
+
   /* lessonModuleList initialized to the last array of LessonModules stored in LocalStorage; 
      otherwise, sets lessonModuleList to following default array */
   lessonModuleList: LessonModule[] = localStorage.getItem('lm-list') ? JSON.parse(localStorage.getItem('lm-list')!) : [

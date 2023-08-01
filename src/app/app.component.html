@@ -16,12 +16,14 @@
       <option value="pa" [selected]="browserLang === 'pa'">پښتو</option> <!--pastho option-->
       <option value="sw" [selected]="browserLang === 'sw'">Kiswahili</option> <!--kishwahili option-->
     </select>
-    <button id="logout" type="button" (click)="logout()"><img id="logout-icon" src="./assets/icons8-logout-96.png" alt="Logout"></button> <!--logout button-->
+    <button id="logout" type="button" (click)="logout()"><img id="logout-icon" src="./assets/logout1.png" alt="Logout"></button> <!--logout button-->
   </div>
 </header>
 
-<div id="content">
+<main>
   <router-outlet></router-outlet>
-</div>
+</main>
+
+<!-- <div id="content"></div> -->
 
 <!-- </body> -->

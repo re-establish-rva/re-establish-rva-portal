@@ -1,5 +1,27 @@
-<div class = "center">
-  <a [routerLink] = "['/']"><button id="button" class = "next" (click) = "completeLesson()">{{ "next" | translate }}</button></a> 
+<div id="yay">
+  <nav id="sidebar">
+    <button id="close" (click)="close()">
+      <img src="./assets/close.png" alt="X" id="close-icon" />
+    </button>
+    <ul>
+      <a [routerLink]="['/']">
+        <li id="home-button">
+          <img src="./assets/home.png" alt="Home Icon" id="home-icon"/><p>{{ "portal_home" | translate }}</p>
+        </li>
+      </a>
+      <p id="lesson-title">{{ "lesson_modules" | translate }}</p>
+      <li *ngFor="let lessonModule of lessonModuleList" [class.activeTab]="lessonModule.id == lessonService.activeModuleID" (click)="close()"><app-lesson-module [lessonModule]="lessonModule"></app-lesson-module></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="center">
+      <a [routerLink] = "['/']"><button id="button" class = "next" (click) = "completeLesson()">{{ "next" | translate }}</button></a> 
+    </div>
+  </main>
 </div>
+
+<button id="menu" (click)="expand()">
+  <img src="./assets/menu.png" alt="Menu" id="menu-icon" />
+</button>
 
 <!--creates the study button-->

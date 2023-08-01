@@ -1,6 +1,19 @@
-<main>
-    <app-lesson-module *ngFor="let lessonModule of lessonModuleList" [lessonModule]="lessonModule"></app-lesson-module>    
-<!--creates the progress bar-->
+<div id="yay">
+  <nav id="sidebar">
+    <button id="close" (click)="close()">
+      <img src="./assets/close.png" alt="X" id="close-icon" />
+    </button>
+    <ul>
+      <a [routerLink]="['/']">
+        <li id="home-button">
+          <img src="./assets/home.png" alt="Home Icon" id="home-icon"/><p>{{ "portal_home" | translate }}</p>
+        </li>
+      </a>
+      <p id="lesson-title">{{ "lesson_modules" | translate }}</p>
+      <li *ngFor="let lessonModule of lessonModuleList"><app-lesson-module [lessonModule]="lessonModule"></app-lesson-module></li>
+    </ul>
+  </nav>
+  <div id="main">
     <section>
       <h3 id="progress-check">{{ "progress_check" | translate }}</h3> 
       <div id="progress-labels">
@@ -11,4 +24,10 @@
       </div>
       <p id="history">> <span class="arrow">{{ "view_test_history" | translate }}</span></p> <!--creates the view test history button-->
     </section>
- </main>
+  </div>
+</div>
+
+<button id="menu" (click)="expand()">
+  <img src="./assets/menu.png" alt="Menu" id="menu-icon" />
+</button>
+
