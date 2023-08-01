@@ -54,7 +54,7 @@ header {
   background-color: #CCD5AE;
   border: none;
   color: black;
-  padding: 8px 12px;
+  padding: 10px 12px 7px 12px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -64,7 +64,7 @@ header {
 }
 
 #logout-icon {
-  height: 28px;
+  height: 26px;
 }
 
 /*animation button for different languages*/

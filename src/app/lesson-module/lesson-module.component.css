@@ -64,7 +64,7 @@ a {
 
 .arrow:hover {
   text-decoration: underline;
-  padding-left: 0.25vw;
+  padding-inline: 0.25vw;
   left: 20px;
 }
 
@@ -80,7 +80,7 @@ a {
 
 .resource:hover .arrow2 {
   text-decoration: underline;
-  padding-left: 0.2vw;
+  padding-inline: 0.2vw;
 }
 
 .no-arrow {
@@ -88,14 +88,13 @@ a {
 }
 
 .check {
+  width: 22px;
+  height: 24px;
   color: darkolivegreen;
   font-size: 18px;
   font-weight: bold;
-  /* float: right; */
-  margin-right: 5px;
-  /* box-sizing: border-box; */
   position: absolute;
-  right: 8px;
+  right: 11px;
   bottom: 11px;
 }
 
@@ -108,8 +107,20 @@ a {
   /* .unit {
     height: fit-content;
   } */
-  li {
+  .arrow {
     font-size: 20px;
+    background-color: var(--lightgray);
+    padding: 4px 12px;
+    border-radius: 25px;
+    margin-bottom: 1vh;
+  }
+  .arrow2 {
+    background-color: var(--lightgray);
+    padding: 4px 12px;
+    border-radius: 25px;
+  }
+  .no-arrow {
+    margin-bottom: calc(10px + 1vh);
   }
   .resource {
     font-size: 18px;

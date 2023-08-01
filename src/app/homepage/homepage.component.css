@@ -107,7 +107,7 @@ section {
 
 #history:hover .arrow {
   text-decoration: underline;
-  padding-left: 0.2vw;
+  padding-inline: 0.2vw;
 }
 
 /*adjusts to different devices*/
@@ -126,6 +126,14 @@ section {
   }
   #history {
     font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .arrow {
+    background-color: var(--lightgray);
+    padding: 4px 12px;
+    border-radius: 25px;
   }
 }
 
