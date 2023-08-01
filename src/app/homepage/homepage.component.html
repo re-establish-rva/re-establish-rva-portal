@@ -4,10 +4,10 @@
     <ul>
       <a [routerLink]="['/']">
         <li id="home-button">
-          <img src="./assets/icons8-home-24.png" alt="Home Icon" id="home-icon"/><p>Portal Home</p>
+          <img src="./assets/icons8-home-24.png" alt="Home Icon" id="home-icon"/><p>{{ "portal_home" | translate }}</p>
         </li>
       </a>
-      <p id="lesson-title">Lesson Modules</p>
+      <p id="lesson-title">{{ "lesson_modules" | translate }}</p>
       <li *ngFor="let lessonModule of lessonModuleList"><app-lesson-module [lessonModule]="lessonModule"></app-lesson-module></li>
     </ul>
   </nav>
